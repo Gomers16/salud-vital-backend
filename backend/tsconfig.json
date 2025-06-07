@@ -1,0 +1,34 @@
+{
+  "extends": "@adonisjs/tsconfig/tsconfig.app.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "./build",
+    "baseUrl": "./", // <--- ¡AÑADE ESTA LÍNEA!
+    "paths": {
+      "@ioc:*": [
+        "node_modules/@ioc/*"
+      ],
+      "#app/*": [
+        "./app/*"
+      ],
+      "#config/*": [
+        "./config/*"
+      ],
+      "#database/*": [
+        "./database/*"
+      ],
+      "#providers/*": [
+        "./providers/*"
+      ],
+      "#start/*": [
+        "./start/*"
+      ],
+      "#tests/*": [
+        "./tests/*"
+      ],
+      "#tmp/*": [
+        "./tmp/*"
+      ]
+    }
+  }
+}
